@@ -1,0 +1,7 @@
+.profile__form {
+    margin: 0;
+    padding: 0;
+    grid-area: form;
+    display: flex;
+    align-items: center;
+}

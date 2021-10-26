@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto</title>
+    <link href="./pages/index.css" rel="stylesheet">
+</head>
+<body class="page">
+    <header class="header">
+        <img src="./vendor/img/logo.svg" alt="Место" class="header__logo">
+    </header>
+    <main class="content">
+        <section class="profile">
+            <div class="profile__user-info">
+                <img src="./vendor/img/image.jpg" alt="Жак-Ив_Кусто" class="profile__avatar">
+                <div class="profile__info">
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <p class="profile__description">Исследователь океана</p>
+                    <form class="profile__form"><button class="profile__edit-button" type="button"></button></form>
+                </div>
+            </div>
+            <form class="profile__add">
+                <button class="profile__add-button" type="button"></button>
+            </form>
+        </section>
+        <section class="grid-elements">
+            <figure class="element">
+                <img src="./vendor/img/kirill-pershin-1088404-unsplash1.jpg" alt="Карачаево-Черкессия" class="element__image">
+                <figcaption class="element__caption">
+                    <p class="element__caption-text">Карачаевск</p>
+                    <form>
+                        <button class="element__like"></button>
+                    </form>
+                </figcaption>
+            </figure>
+            <figure class="element">
+                <img src="./vendor/img/kirill-pershin-1404681-unsplash2.jpg" alt="Эльбрус" class="element__image">
+                <figcaption class="element__caption">
+                    <p class="element__caption-text">Гора Эльбрус</p>
+                    <form>
+                        <button class="element__like"></button>
+                    </form>
+                </figcaption>
+            </figure>
+            <figure class="element">
+                <img src="./vendor/img/kirill-pershin-1556355-unsplash3.jpg" alt="Домбай" class="element__image">
+                <figcaption class="element__caption">
+                    <p class="element__caption-text">Домбай</p>
+                    <form>
+                        <button class="element__like"></button>
+                    </form>
+                </figcaption>
+            </figure>
+            <figure class="element">
+                <img src="./vendor/img/kirill-pershin-1404681-unsplash2.jpg" alt="Эльбрус" class="element__image">
+                <figcaption class="element__caption">
+                    <p class="element__caption-text">Гора Эльбрус</p>
+                    <form>
+                        <button class="element__like"></button>
+                    </form>
+                </figcaption>
+            </figure>
+            <figure class="element">
+                <img src="./vendor/img/kirill-pershin-1556355-unsplash3.jpg" alt="Домбай" class="element__image">
+                <figcaption class="element__caption">
+                    <p class="element__caption-text">Домбай</p>
+                    <form>
+                        <button class="element__like"></button>
+                    </form>
+                </figcaption>
+            </figure>
+            <figure class="element">
+                <img src="./vendor/img/kirill-pershin-1088404-unsplash1.jpg" alt="Карачаево-Черкессия" class="element__image">
+                <figcaption class="element__caption">
+                    <p class="element__caption-text">Карачаево-Черкессия</p>
+                    <form>
+                        <button class="element__like"></button>
+                    </form>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="copyright">&#169; 2021 Артем Лямзин</p>
+    </footer>
+    <div class="popup">
+        <div class="popup__form">
+            <form>
+                <h2 class="popup__description">Редактирование профиля</h2>
+                <input type="text" class="popup__input" name="name" placeholder="Жак-Ив Кусто">
+                <input type="text" class="popup__input" name="description" placeholder="Исследователь океана">
+                <button class="popup__button" type="submit">Сохранить</button>
+            </form>
+            <form  class="popup__close">
+                <button class="popup__close-button" type="button"></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
