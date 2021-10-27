@@ -1,9 +1,0 @@
-.profile__add {
-    width: fit-content;
-}
-
-@media screen and (max-width: 690px) {
-    .profile__add {
-        width: 100%;
-    }
-}
