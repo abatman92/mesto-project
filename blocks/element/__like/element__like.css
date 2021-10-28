@@ -1,7 +1,8 @@
 .element__like {
     background-color: #ffffff;
     background-image: url(../../../vendor/img/Vectorlike.svg);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     border: none;
     height: 19px;
     width: 22px;
