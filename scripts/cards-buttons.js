@@ -6,6 +6,9 @@ document.querySelector('.grid-elements').addEventListener('click', (event) => {
     event.target.closest('.element').remove();
   }
   if (event.target.classList.contains('element__image')) {
+    if (document.querySelector('.popup__img')) {
+      document.querySelector('.popup__img').remove();
+    }
     popupImg = event.target.cloneNode(false);
     popupImg.classList.remove('element__image');
     popupImg.classList.add('popup__img');

@@ -31,5 +31,4 @@ const popupWithImg = document.querySelector('.popup_place_img-popup')
 
 document.querySelector('.popup__close-button_place_img-popup').addEventListener('click', () =>  {
   closePopup(popupWithImg);
-  document.querySelector('.popup__img').remove();
 });
