@@ -24,61 +24,52 @@
                 <button class="profile__add-button" type="button"></button>
         </section>
         <section class="grid-elements">
-            <figure class="element">
-                <img src="./vendor/img/kirill-pershin-1088404-unsplash1.jpg" alt="Карачаево-Черкессия" class="element__image">
-                <figcaption class="element__caption">
-                    <p class="element__caption-text">Карачаевск</p>
-                    <button class="element__like" type="button"></button>
-                </figcaption>
-            </figure>
-            <figure class="element">
-                <img src="./vendor/img/kirill-pershin-1404681-unsplash2.jpg" alt="Эльбрус" class="element__image">
-                <figcaption class="element__caption">
-                    <p class="element__caption-text">Гора Эльбрус</p>
-                    <button class="element__like" type="button"></button>
-                </figcaption>
-            </figure>
-            <figure class="element">
-                <img src="./vendor/img/kirill-pershin-1556355-unsplash3.jpg" alt="Домбай" class="element__image">
-                <figcaption class="element__caption">
-                    <p class="element__caption-text">Домбай</p>
-                    <button class="element__like" type="button"></button>
-                </figcaption>
-            </figure>
-            <figure class="element">
-                <img src="./vendor/img/kirill-pershin-1404681-unsplash2.jpg" alt="Эльбрус" class="element__image">
-                <figcaption class="element__caption">
-                    <p class="element__caption-text">Гора Эльбрус</p>
-                    <button class="element__like" type="button"></button>
-                </figcaption>
-            </figure>
-            <figure class="element">
-                <img src="./vendor/img/kirill-pershin-1556355-unsplash3.jpg" alt="Домбай" class="element__image">
-                <figcaption class="element__caption">
-                    <p class="element__caption-text">Домбай</p>
-                    <button class="element__like" type="button"></button>
-                </figcaption>
-            </figure>
-            <figure class="element">
-                <img src="./vendor/img/kirill-pershin-1088404-unsplash1.jpg" alt="Карачаево-Черкессия" class="element__image">
-                <figcaption class="element__caption">
-                    <p class="element__caption-text">Карачаево-Черкессия</p>
-                    <button class="element__like element__like_active" type="button"></button>
-                </figcaption>
-            </figure>
+            
         </section>
     </main>
     <footer class="footer">
         <p class="footer__copyright">&#169; 2021 Артем Лямзин</p>
     </footer>
-    <div class="popup">
+    <div class="popup popup_place_edit-profile">
         <form class="popup__form" name="edit-form">
             <h2 class="popup__description">Редактировать профиль</h2>
             <input type="text" class="popup__input" name="name" placeholder="Жак-Ив Кусто">
             <input type="text" class="popup__input" name="description" placeholder="Исследователь океана">
             <button class="popup__button" type="submit">Сохранить</button>
-            <button class="popup__close-button" type="button"></button>
+            <button class="popup__close-button popup__close-button_place_edit-profile" type="button"></button>
         </form>
     </div>
+    <div class="popup popup_place_add-card">
+        <form class="popup__form" name="add-card">
+            <h2 class="popup__description">Редактировать профиль</h2>
+            <input type="text" class="popup__input" name="card-heading" placeholder="Введите название">
+            <input type="text" class="popup__input" name="card-link" placeholder="Введите ссылку на картинку">
+            <button class="popup__button" type="submit">Добавить</button>
+            <button class="popup__close-button popup__close-button_place_add-card" type="button"></button>
+        </form>
+    </div>
+    <div class="popup popup_place_img-popup">
+        <figure class="popup__img-container">
+            <figcaption class="popup__caption"></figcaption>
+            <button class="popup__close-button popup__close-button_place_img-popup"></button>
+        </figure>
+    </div>
+
+    <template id="card-temp">
+        <figure class="element">
+            <img class="element__image">
+            <figcaption class="element__caption">
+                <p class="element__caption-text"></p>
+                <button class="element__like" type="button"></button>
+            </figcaption>
+            <button class="element__delete"></button>
+        </figure>
+    </template>
+
+    <script src="./scripts/openclose-popup.js"></script>
+    <script src="./scripts/edit_profile.js"></script>
+    <script src="./scripts/cards.js"></script>
+    <script src="./scripts/cards-buttons.js"></script>
+    <script src="./scripts/add-card.js"></script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+.element__delete {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 18px;
+  height: 19px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  background-image: url(../../../vendor/img/del-bucket.svg);
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.element__delete:hover {
+  opacity: 0.5;
+}
