@@ -1,14 +1,7 @@
-function openPopup(obj) {
-  obj.classList.add('popup_active');
-};
-
-function closePopup(obj) {
-  obj.classList.remove('popup_active');
-};
-
-const editProfileForm = document.querySelector('.popup_place_edit-profile');
-
+// Открыть/закрыть поп-ап с профайлом
 document.querySelector('.profile__edit-button').addEventListener('click', function() {
+  nameInput.value = prflName.textContent;
+  jobInput.value = prflJob.textContent;
   openPopup(editProfileForm)
 });
 
@@ -16,8 +9,7 @@ document.querySelector('.popup__close-button_place_edit-profile').addEventListen
   closePopup(editProfileForm)
 });
 
-const addCardForm = document.querySelector('.popup_place_add-card');
-
+// Попап с добавлением карточки
 document.querySelector('.profile__add-button').addEventListener('click', function() {
   openPopup(addCardForm)
 });
@@ -26,9 +18,7 @@ document.querySelector('.popup__close-button_place_add-card').addEventListener('
   closePopup(addCardForm)
 });
 
-const popupWithImg = document.querySelector('.popup_place_img-popup')
-
-
+// Закрыть попап с картинкой
 document.querySelector('.popup__close-button_place_img-popup').addEventListener('click', () =>  {
   closePopup(popupWithImg);
 });

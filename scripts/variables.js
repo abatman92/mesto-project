@@ -1,3 +1,9 @@
+// Popups
+const popupWithImg = document.querySelector('.popup_place_img-popup');
+const editProfileForm = document.querySelector('.popup_place_edit-profile');
+const addCardForm = document.querySelector('.popup_place_add-card');
+
+// Массив с картами для пре-лода
 const initialCards = [
   {
     name: 'Архыз',
@@ -25,14 +31,15 @@ const initialCards = [
   }
 ];
 
+// Перемненные для создания карт
 const cardsBox = document.querySelector('.grid-elements');
 const cardTemplate = document.querySelector('#card-temp').content;
+const cardName = document.querySelector('input[name=card-heading]');
+const cardImgLink = document.querySelector('input[name=card-link]');
 
-initialCards.forEach(function(item) {
-  const cardTempCont = cardTemplate.querySelector('.element').cloneNode(true);
-  
-  cardTempCont.querySelector('.element__caption-text').textContent = item.name;
-  
-  cardTempCont.querySelector('.element__image').setAttribute('src', item.link);
-  cardsBox.prepend(cardTempCont);
-})
+// Переменные для редактирования профиля
+const prflName = document.querySelector('.profile__name');
+const prflJob = document.querySelector('.profile__description');
+
+const nameInput = document.querySelector('input[name=name]');
+const jobInput = document.querySelector('input[name=description]');
