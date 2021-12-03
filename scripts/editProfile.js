@@ -4,5 +4,5 @@ document.querySelector('form[name=edit-form]').addEventListener('submit', (evt) 
   jobValue = jobInput.value;
   prflName.textContent = nameValue;
   prflJob.textContent = jobValue;
-  editProfileForm.classList.remove('popup_active');
+  closePopup(editProfileForm)
 });

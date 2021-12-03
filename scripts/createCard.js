@@ -6,19 +6,20 @@ function createCard(cardHeading, cardLink) {
   cardTempCont.querySelector('.element__caption-text').textContent = cardHeading;
   cardImg.setAttribute('src', cardLink);
   cardImg.setAttribute('alt',  cardHeading);
+  cardImg.setAttribute('title', cardHeading)
   cardImg.addEventListener('click', viewImg);
   likeButton.addEventListener('click', likeCard);
   removeButton.addEventListener('click', removeCard);
-  cardsBox.prepend(cardTempCont);
+  return cardTempCont;
 }
 
 initialCards.forEach(function(item) {
-  createCard(item.name, item.link);
+  cardsBox.append(createCard(item.name, item.link))
 })
 
 document.querySelector('form[name=add-card]').addEventListener('submit', (evt) => {
   evt.preventDefault();
-  createCard(cardName.value, cardImgLink.value);
+  cardsBox.prepend(createCard(cardName.value, cardImgLink.value));
   cardName.value = "";
   cardImgLink.value = "";
   closePopup(addCardForm);
