@@ -2,8 +2,10 @@ function openPopup(obj) {
   obj.classList.add('popup_active');
 };
 
-function closePopup(obj) {
-  obj.classList.remove('popup_active');
+function closePopup(event) {
+  if (event.target.classList.contains('popup__close-button') || event.target.classList.contains('popup__button')) {
+    event.target.closest('.popup').classList.remove('popup_active');
+  }
 };
 
 function viewImg(event) {

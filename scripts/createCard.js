@@ -22,5 +22,4 @@ document.querySelector('form[name=add-card]').addEventListener('submit', (evt) =
   cardsBox.prepend(createCard(cardName.value, cardImgLink.value));
   cardName.value = "";
   cardImgLink.value = "";
-  closePopup(addCardForm);
 });
